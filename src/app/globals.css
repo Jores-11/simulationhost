@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-geist-sans: "Geist", sans-serif;
+    --font-geist-mono: "Geist Mono", monospace;
+  }
+
+  body {
+    @apply transition-colors duration-300;
+  }
+
+  h1, h2, h3 {
+    @apply font-bold;
+  }
+
+  table {
+    @apply border-collapse;
+  }
+
+  th, td {
+    @apply border;
+  }
+}
+
+.chart-container {
+  @apply h-48 rounded-lg;
+}
+
+button {
+  @apply transition-colors duration-200;
+}
+
+table thead tr th {
+  @apply p-3 text-left;
+}
+
+table tbody tr td {
+  @apply p-3;
+}
+
+.recharts-active-dot {
+  cursor: grab;
+}
+
+.recharts-active-dot:active {
+  cursor: grabbing;
+}
+
+/* Custom Toast Styles */
+.Toastify__toast {
+  @apply rounded-lg shadow-lg;
+}
+
+.Toastify__toast--success {
+  @apply bg-green-600 text-white;
+}
+
+.Toastify__toast--info {
+  @apply bg-blue-600 text-white;
+}
+
+/* DatePicker Styles */
+.react-datepicker-wrapper {
+  @apply w-full;
+}
+
+.react-datepicker-popper {
+  @apply z-50;
+}
+
+.react-datepicker {
+  @apply border border-gray-300 rounded-lg shadow-sm;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply w-6 h-6 bg-green-500 rounded-full cursor-pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply w-6 h-6 bg-green-500 rounded-full cursor-pointer;
+}
