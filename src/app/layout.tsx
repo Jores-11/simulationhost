@@ -28,7 +28,7 @@ export default function RootLayout({
   const [newName, setNewName] = useState("");
   const [isEditingName, setIsEditingName] = useState(false);
   const [profilePic, setProfilePic] = useState<string | null>(null);
-  const [isOnline, setIsOnline] = useState(true); // Simulate online status
+  const [isOnline, setIsOnline] = useState(true);
   const [showStats, setShowStats] = useState(false);
 
   // Sample data for ProfileChart
@@ -42,7 +42,7 @@ export default function RootLayout({
   ];
 
   const handleLogout = () => {
-    // Simulate logout
+    
     toast.success("Logged out successfully!");
     setIsProfileOpen(false);
     // Redirect to login page (simulated)
@@ -69,7 +69,7 @@ export default function RootLayout({
     }
   };
 
-  // Animation variants for dropdown
+ 
   const dropdownVariants = {
     hidden: { opacity: 0, y: -10 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeOut" } },
@@ -84,9 +84,9 @@ export default function RootLayout({
         {/* Principal Navbar */}
         <header className="w-full bg-white shadow-md p-4 flex justify-between items-center fixed top-0 left-0 z-20 dark:bg-gray-800 dark:text-white">
           <div className="flex items-center gap-2">
-            {/* Simulation Logo */}
+            
             <img
-              src="https://via.placeholder.com/32" // Placeholder logo (replace with actual logo URL)
+              src="" // Placeholder logo (replace with actual logo URL)
               alt="Simulation Logo"
               className="w-8 h-8"
             />
@@ -118,7 +118,7 @@ export default function RootLayout({
               </div>
             </motion.div>
 
-            {/* Profile Dropdown */}
+            
             <AnimatePresence>
               {isProfileOpen && (
                 <motion.div
