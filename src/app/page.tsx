@@ -1564,7 +1564,7 @@ export default function Home() {
                         <thead>
                           <tr className={`${theme === "black" ? "bg-gray-700" : "bg-gray-200"}`}>
                             <th className="p-3 text-left">Strategy</th>
-                            <th className="p-3 text-left">Parameter</th>
+                            <th className="p-3 text-left">Parameters</th>
                             {tableHeaders.map((header, index) => (
                               <th key={index} className="p-3 text-right">
                                 {header}
